@@ -1,0 +1,7 @@
+{
+    "board": "adafruit:samd:adafruit_itsybitsy_m0",
+    "configuration": "usbstack=arduino,debug=on",
+    "output": "../build_DIM-6CVLED01",
+    "sketch": "DIM-6CVLED.01.ino",
+    "port": "COM23"
+}

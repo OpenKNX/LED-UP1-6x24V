@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Starten",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "Programmnamen eingeben, z. B. \"${workspaceFolder}/a.exe\"",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/path/to/gdb",
+            "setupCommands": [
+                {
+                    "description": "Automatische Strukturierung und Einrückung für \"gdb\" aktivieren",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "name": "debug COM8",
+            "BMPGDBSerialPort": "//./COM8",
+            "interface": "swd",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "bmp",
+            "executable": "../build_DIM-6CVLED01/DIM-6CVLED.01.ino.elf",
+            "armToolchainPath": "C:\\Users\\dosp\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\bin"
+        }
+    ]
+}

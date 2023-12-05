@@ -1,0 +1,40 @@
+### Module positions - created on 18/04/2021 18:26:34 ###
+### Printed by Pcbnew version kicad (5.1.4)-1
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val             Package                                           PosX       PosY       Rot  Side
+C1        1µF            C_0603_1608Metric                            -123.4366  -105.8548  270.0000  bottom
+C2        1µF            C_0603_1608Metric                            -108.9078  -107.4701   90.0000  bottom
+C3        1µF            C_0603_1608Metric                            -121.5798  -101.9608  180.0000  bottom
+C4        1µF            C_0603_1608Metric                            -123.4366  -108.8647   90.0000  bottom
+C5        1µF            C_0603_1608Metric                            -116.2941  -113.2410    0.0000  bottom
+C11       10uF            C_0603_1608Metric_Pad1.05x0.95mm_HandSolder   -96.5000  -127.1250  270.0000  bottom
+C12       47nF            C_0805_2012Metric_Pad1.15x1.40mm_HandSolder  -123.3000  -118.1750  270.0000  bottom
+C13       47nF            C_0805_2012Metric_Pad1.15x1.40mm_HandSolder  -113.6000  -118.1250   90.0000  bottom
+C14       10uF            C_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -107.0549  -112.3698    0.0000  bottom
+LED1      LED             LED_0603_1608Metric                          -101.7120  -103.4695   90.0000  bottom
+R1        1k              R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -103.6170  -103.5090   90.0000  bottom
+R10       1k              R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -125.2000  -118.2250  270.0000  bottom
+R11       1k              R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -126.9000  -118.2250  270.0000  bottom
+R12       1k              R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -111.5000  -117.9250  270.0000  bottom
+R13       1k              R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -109.8000  -117.9250  270.0000  bottom
+R14       10k             R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -103.6996  -112.3748    0.0000  bottom
+R19       4k7             R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -103.5000  -108.3750  270.0000  bottom
+R21       100R            R_0603_1608Metric_Pad1.05x0.95mm_HandSolder   -99.9000  -127.5000   90.0000  bottom
+R22       100R            R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -104.9000  -127.5000   90.0000  bottom
+R23       100R            R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -109.9000  -127.5000   90.0000  bottom
+R24       100R            R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -114.9000  -127.5000   90.0000  bottom
+R25       100R            R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -119.9000  -127.5000   90.0000  bottom
+R26       100R            R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -124.4000  -127.5000   90.0000  bottom
+R31       10k             R_0603_1608Metric_Pad1.05x0.95mm_HandSolder   -99.9000  -131.0000   90.0000  bottom
+R32       10k             R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -104.9000  -131.0000   90.0000  bottom
+R33       10k             R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -109.9000  -131.0000   90.0000  bottom
+R34       10k             R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -114.9000  -131.0000   90.0000  bottom
+R35       10k             R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -119.9000  -131.0000   90.0000  bottom
+R36       10k             R_0603_1608Metric_Pad1.05x0.95mm_HandSolder  -124.4000  -131.0000   90.0000  bottom
+SW1       Prog            SW_Push_Xunpu_TS-1089S_Handsolder             -97.3000  -103.6500    0.0000  bottom
+U1        ATSAMD21G18     TQFP-48_7x7mm_P0.5mm                         -115.6566  -107.0485   90.0000  bottom
+U3        LDO_5V_SOT23-3  TSOT-23                                       -93.0000  -127.5000  270.0000  bottom
+U4        PCA9685PW       TSSOP-28_4.4x9.7mm_P0.65mm_Handsolder        -103.3000  -117.2860   90.0000  bottom
+U5        ADuM1250        SSOP-8_3.9x5.05mm_P1.27mm                    -118.4750  -118.2050  180.0000  bottom
+## End

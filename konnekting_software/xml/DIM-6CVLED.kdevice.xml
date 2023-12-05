@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KonnektingDevice xmlns="http://konnekting.de/xml/KonnektingDevice/v0">
+    <Device ManufacturerId="7337" DeviceId="120" Revision="0">
+        <ManufacturerName>SirSydom KNX Labs</ManufacturerName>
+        <DeviceName>DIM-xxxxLED.01</DeviceName>
+		
+		<Parameters>
+			<ParameterGroup Name="General" Id="0">
+				<Parameter Id="0" IdName="ch_ABC_mode">
+					<Description>Operating Mode Channel ABC</Description>
+					<Value Type="uint8" Default="00" Options="00=3channel|01=RGB"/>
+				</Parameter>
+				<Parameter Id="1" IdName="ch_DEF_mode">
+					<Description>Operating Mode Channel DEF</Description>
+					<Value Type="uint8" Default="00" Options="00=3channel|01=RGB"/>
+				</Parameter>
+			</ParameterGroup>
+			<ParameterGroup Name="Channel A" Id="1">
+				<Parameter Id="2" IdName="ch_A_sw_on_dim">
+					<Description>Switch On/Off at Dimm</Description>
+					<Value Type="uint8" Default="01" Options="00=disabled|01=only ON|02=only OFF|03=ON and OFF"/>
+				</Parameter>
+				<Parameter Id="3" IdName="ch_A_fade_time">
+					<Description>Fading Time</Description>
+					<Value Type="uint8" Default="02" Options="00=do not fade|01=6s|02=3s|03=2s|05=1.5s|07=1s|0D=0.5s|1A=0.25s|40=0.1s"/>
+				</Parameter>
+				<Parameter Id="4" IdName="ch_A_lock_mode">
+					<Description>Lock Object Mode</Description>
+					<Value Type="uint8" Default="00" Options="00=1Bit: 0: unlock 1: OFF|01=1Bit: 0: unlock 1: ON|02=1Bit: 0: unlock 1: FREEZE|03=1Bit: 0: OFF 1: ON|10=2Bit: 0x: unlock 10: OFF 11:ON|11=2Bit: 0x: unlock 10: OFF 11:FREEZE|12=2Bit: 0x: unlock 10: FREEZE 11:ON|20=8Bit: 0h: unlock 1h-FFh: Dimmvalue" />
+				</Parameter>
+				<Parameter Id="5" IdName="ch_A_lock_time">
+					<Description>Lock Object Unlock Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="6" IdName="ch_A_autooff_time">
+					<Description>Automatic Off Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="7" IdName="ch_A_switchvalues">
+					<Description>Switch On values for Day (Byte1) and Night (Byte2).</Description>
+					<Value Type="raw2" Default="0000"/>
+				</Parameter>
+			</ParameterGroup>
+			<ParameterGroup Name="Channel B" Id="2">
+				<Parameter Id="8" IdName="ch_B_sw_on_dim">
+					<Description>Switch On/Off at Dimm</Description>
+					<Value Type="uint8" Default="01" Options="00=disabled|01=only ON|02=only OFF|03=ON and OFF"/>
+				</Parameter>
+				<Parameter Id="9" IdName="ch_B_fade_time">
+					<Description>Fading Time</Description>
+					<Value Type="uint8" Default="02" Options="00=do not fade|01=6s|02=3s|03=2s|05=1.5s|07=1s|0D=0.5s|1A=0.25s|40=0.1s"/>
+				</Parameter>
+				<Parameter Id="10" IdName="ch_B_lock_mode">
+					<Description>Lock Object Mode</Description>
+					<Value Type="uint8" Default="00" Options="00=1Bit: 0: unlock 1: OFF|01=1Bit: 0: unlock 1: ON|02=1Bit: 0: unlock 1: FREEZE|03=1Bit: 0: OFF 1: ON|10=2Bit: 0x: unlock 10: OFF 11:ON|11=2Bit: 0x: unlock 10: OFF 11:FREEZE|12=2Bit: 0x: unlock 10: FREEZE 11:ON|20=8Bit: 0h: unlock 1h-FFh: Dimmvalue" />
+				</Parameter>
+				<Parameter Id="11" IdName="ch_B_lock_time">
+					<Description>Lock Object Unlock Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="12" IdName="ch_B_autooff_time">
+					<Description>Automatic Off Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="13" IdName="ch_B_switchvalues">
+					<Description>Switch On values for Day (Byte1) and Night (Byte2).</Description>
+					<Value Type="raw2" Default="0000"/>
+				</Parameter>
+			</ParameterGroup>
+			<ParameterGroup Name="Channel C" Id="3">
+				<Parameter Id="14" IdName="ch_C_sw_on_dim">
+					<Description>Switch On/Off at Dimm</Description>
+					<Value Type="uint8" Default="01" Options="00=disabled|01=only ON|02=only OFF|03=ON and OFF"/>
+				</Parameter>
+				<Parameter Id="15" IdName="ch_C_fade_time">
+					<Description>Fading Time</Description>
+					<Value Type="uint8" Default="02" Options="00=do not fade|01=6s|02=3s|03=2s|05=1.5s|07=1s|0D=0.5s|1A=0.25s|40=0.1s"/>
+				</Parameter>
+				<Parameter Id="16" IdName="ch_C_lock_mode">
+					<Description>Lock Object Mode</Description>
+					<Value Type="uint8" Default="00" Options="00=1Bit: 0: unlock 1: OFF|01=1Bit: 0: unlock 1: ON|02=1Bit: 0: unlock 1: FREEZE|03=1Bit: 0: OFF 1: ON|10=2Bit: 0x: unlock 10: OFF 11:ON|11=2Bit: 0x: unlock 10: OFF 11:FREEZE|12=2Bit: 0x: unlock 10: FREEZE 11:ON|20=8Bit: 0h: unlock 1h-FFh: Dimmvalue" />
+				</Parameter>
+				<Parameter Id="17" IdName="ch_C_lock_time">
+					<Description>Lock Object Unlock Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="18" IdName="ch_C_autooff_time">
+					<Description>Automatic Off Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="19" IdName="ch_C_switchvalues">
+					<Description>Switch On values for Day (Byte1) and Night (Byte2).</Description>
+					<Value Type="raw2" Default="0000"/>
+				</Parameter>
+			</ParameterGroup>
+			<ParameterGroup Name="Channel D" Id="4">
+				<Parameter Id="20" IdName="ch_D_sw_on_dim">
+					<Description>Switch On/Off at Dimm</Description>
+					<Value Type="uint8" Default="01" Options="00=disabled|01=only ON|02=only OFF|03=ON and OFF"/>
+				</Parameter>
+				<Parameter Id="21" IdName="ch_D_fade_time">
+					<Description>Fading Time</Description>
+					<Value Type="uint8" Default="02" Options="00=do not fade|01=6s|02=3s|03=2s|05=1.5s|07=1s|0D=0.5s|1A=0.25s|40=0.1s"/>
+				</Parameter>
+				<Parameter Id="22" IdName="ch_D_lock_mode">
+					<Description>Lock Object Mode</Description>
+					<Value Type="uint8" Default="00" Options="00=1Bit: 0: unlock 1: OFF|01=1Bit: 0: unlock 1: ON|02=1Bit: 0: unlock 1: FREEZE|03=1Bit: 0: OFF 1: ON|10=2Bit: 0x: unlock 10: OFF 11:ON|11=2Bit: 0x: unlock 10: OFF 11:FREEZE|12=2Bit: 0x: unlock 10: FREEZE 11:ON|20=8Bit: 0h: unlock 1h-FFh: Dimmvalue" />
+				</Parameter>
+				<Parameter Id="23" IdName="ch_D_lock_time">
+					<Description>Lock Object Unlock Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="24" IdName="ch_D_autooff_time">
+					<Description>Automatic Off Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="25" IdName="ch_D_switchvalues">
+					<Description>Switch On values for Day (Byte1) and Night (Byte2).</Description>
+					<Value Type="raw2" Default="0000"/>
+				</Parameter>
+			</ParameterGroup>
+			<ParameterGroup Name="Channel E" Id="5">
+				<Parameter Id="26" IdName="ch_E_sw_on_dim">
+					<Description>Switch On/Off at Dimm</Description>
+					<Value Type="uint8" Default="01" Options="00=disabled|01=only ON|02=only OFF|03=ON and OFF"/>
+				</Parameter>
+				<Parameter Id="27" IdName="ch_E_fade_time">
+					<Description>Fading Time</Description>
+					<Value Type="uint8" Default="02" Options="00=do not fade|01=6s|02=3s|03=2s|05=1.5s|07=1s|0D=0.5s|1A=0.25s|40=0.1s"/>
+				</Parameter>
+				<Parameter Id="28" IdName="ch_E_lock_mode">
+					<Description>Lock Object Mode</Description>
+					<Value Type="uint8" Default="00" Options="00=1Bit: 0: unlock 1: OFF|01=1Bit: 0: unlock 1: ON|02=1Bit: 0: unlock 1: FREEZE|03=1Bit: 0: OFF 1: ON|10=2Bit: 0x: unlock 10: OFF 11:ON|11=2Bit: 0x: unlock 10: OFF 11:FREEZE|12=2Bit: 0x: unlock 10: FREEZE 11:ON|20=8Bit: 0h: unlock 1h-FFh: Dimmvalue" />
+				</Parameter>
+				<Parameter Id="29" IdName="ch_E_lock_time">
+					<Description>Lock Object Unlock Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="30" IdName="ch_E_autooff_time">
+					<Description>Automatic Off Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="31" IdName="ch_E_switchvalues">
+					<Description>Switch On values for Day (Byte1) and Night (Byte2).</Description>
+					<Value Type="raw2" Default="0000"/>
+				</Parameter>
+			</ParameterGroup>
+			<ParameterGroup Name="Channel F" Id="6">
+				<Parameter Id="32" IdName="ch_F_sw_on_dim">
+					<Description>Switch On/Off at Dimm</Description>
+					<Value Type="uint8" Default="01" Options="00=disabled|01=only ON|02=only OFF|03=ON and OFF"/>
+				</Parameter>
+				<Parameter Id="33" IdName="ch_F_fade_time">
+					<Description>Fading Time</Description>
+					<Value Type="uint8" Default="02" Options="00=do not fade|01=6s|02=3s|03=2s|05=1.5s|07=1s|0D=0.5s|1A=0.25s|40=0.1s"/>
+				</Parameter>
+				<Parameter Id="34" IdName="ch_F_lock_mode">
+					<Description>Lock Object Mode</Description>
+					<Value Type="uint8" Default="00" Options="00=1Bit: 0: unlock 1: OFF|01=1Bit: 0: unlock 1: ON|02=1Bit: 0: unlock 1: FREEZE|03=1Bit: 0: OFF 1: ON|10=2Bit: 0x: unlock 10: OFF 11:ON|11=2Bit: 0x: unlock 10: OFF 11:FREEZE|12=2Bit: 0x: unlock 10: FREEZE 11:ON|20=8Bit: 0h: unlock 1h-FFh: Dimmvalue" />
+				</Parameter>
+				<Parameter Id="35" IdName="ch_F_lock_time">
+					<Description>Lock Object Unlock Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="36" IdName="ch_F_autooff_time">
+					<Description>Automatic Off Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="37" IdName="ch_F_switchvalues">
+					<Description>Switch On values for Day (Byte1) and Night (Byte2).</Description>
+					<Value Type="raw2" Default="0000"/>
+				</Parameter>
+			</ParameterGroup>
+			<ParameterGroup Name="Channel ABC" Id="7">
+				<Parameter Id="38" IdName="ch_ABC_sw_on_dim">
+					<Description>Switch On/Off at Dimm</Description>
+					<Value Type="uint8" Default="01" Options="00=disabled|01=only ON|02=only OFF|03=ON and OFF"/>
+				</Parameter>
+				<Parameter Id="39" IdName="ch_ABC_fade_time">
+					<Description>Fading Time</Description>
+					<Value Type="uint8" Default="01" Options="00=do not fade|01=6s|02=3s|03=2s|05=1.5s|07=1s|0D=0.5s|1A=0.25s|40=0.1s"/>
+				</Parameter>
+				<Parameter Id="40" IdName="ch_ABC_lock_mode">
+					<Description>Lock Object Mode</Description>
+					<Value Type="uint8" Default="00" Options="00=1Bit: 0: unlock 1: OFF|01=1Bit: 0: unlock 1: ON|02=1Bit: 0: unlock 1: FREEZE|03=1Bit: 0: OFF 1: ON|10=2Bit: 0x: unlock 10: OFF 11:ON|11=2Bit: 0x: unlock 10: OFF 11:FREEZE|12=2Bit: 0x: unlock 10: FREEZE 11:ON" />
+				</Parameter>
+				<Parameter Id="41" IdName="ch_ABC_lock_time">
+					<Description>Lock Object Unlock Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="42" IdName="ch_ABC_autooff_time">
+					<Description>Automatic Off Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="43" IdName="ch_ABC_switchvalues">
+					<Description>Switch On values for Day (Byte1-3: RGB) and Night (Byte4-6: RGB).</Description>
+					<Value Type="raw6" Default="000000000000"/>
+				</Parameter>
+			</ParameterGroup>
+			<ParameterGroup Name="Channel DEF" Id="8">
+				<Parameter Id="44" IdName="ch_DEF_sw_on_dim">
+					<Description>Switch On/Off at Dimm</Description>
+					<Value Type="uint8" Default="01" Options="00=disabled|01=only ON|02=only OFF|03=ON and OFF"/>
+				</Parameter>
+				<Parameter Id="45" IdName="ch_DEF_fade_time">
+					<Description>Fading Time</Description>
+					<Value Type="uint8" Default="01" Options="00=do not fade|01=6s|02=3s|03=2s|05=1.5s|07=1s|0D=0.5s|1A=0.25s|40=0.1s"/>
+				</Parameter>
+				<Parameter Id="46" IdName="ch_DEF_lock_mode">
+					<Description>Lock Object Mode</Description>
+					<Value Type="uint8" Default="00" Options="00=1Bit: 0: unlock 1: OFF|01=1Bit: 0: unlock 1: ON|02=1Bit: 0: unlock 1: FREEZE|03=1Bit: 0: OFF 1: ON|10=2Bit: 0x: unlock 10: OFF 11:ON|11=2Bit: 0x: unlock 10: OFF 11:FREEZE|12=2Bit: 0x: unlock 10: FREEZE 11:ON" />
+				</Parameter>
+				<Parameter Id="47" IdName="ch_DEF_lock_time">
+					<Description>Lock Object Unlock Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="48" IdName="ch_DEF_autooff_time">
+					<Description>Automatic Off Time (x 1min, 0: deactivated</Description>
+					<Value Type="uint16" Default="0000"/>
+				</Parameter>
+				<Parameter Id="49" IdName="ch_DEF_switchvalues">
+					<Description>Switch On values for Day (Byte1-3: RGB) and Night (Byte4-6: RGB).</Description>
+					<Value Type="raw6" Default="000000000000"/>
+				</Parameter>
+			</ParameterGroup>
+		</Parameters>
+		
+        <CommObjects>
+			<CommObject Id="0" IdName="ch_A_sw">
+                <Name>Channel A</Name>
+                <Function>Switch</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="1" IdName="ch_A_dim">
+                <Name>Channel A</Name>
+                <Function>Dimming Absolute</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="2" IdName="ch_A_dimrel">
+                <Name>Channel A</Name>
+                <Function>Dimming Relative</Function>
+                <DataPointType>3.007</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="3" IdName="ch_A_lock">
+                <Name>Channel A</Name>
+                <Function>Lock</Function>
+                <DataPointType>1.003</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+			
+			<CommObject Id="4" IdName="ch_A_scene">
+                <Name>Channel A</Name>
+                <Function>Szene</Function>
+                <DataPointType>18.001</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+
+			<CommObject Id="5" IdName="ch_A_stat_sw">
+                <Name>Channel A</Name>
+                <Function>Status On/Off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			
+			<CommObject Id="6" IdName="ch_A_stat_dim">
+                <Name>Channel A</Name>
+                <Function>Status Dimming Value</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			<CommObject Id="7" IdName="ch_B_sw">
+                <Name>Channel B</Name>
+                <Function>Switch</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="8" IdName="ch_B_dim">
+                <Name>Channel B</Name>
+                <Function>Dimming Absolute</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="9" IdName="ch_B_dimrel">
+                <Name>Channel B</Name>
+                <Function>Dimming Relative</Function>
+                <DataPointType>3.007</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="10" IdName="ch_B_lock">
+                <Name>Channel B</Name>
+                <Function>Lock</Function>
+                <DataPointType>1.003</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+			
+			<CommObject Id="11" IdName="ch_B_scene">
+                <Name>Channel B</Name>
+                <Function>Szene</Function>
+                <DataPointType>18.001</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+
+			<CommObject Id="12" IdName="ch_B_stat_sw">
+                <Name>Channel B</Name>
+                <Function>Status On/Off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			
+			<CommObject Id="13" IdName="ch_B_stat_dim">
+                <Name>Channel B</Name>
+                <Function>Status Dimming Value</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			<CommObject Id="14" IdName="ch_C_sw">
+                <Name>Channel C</Name>
+                <Function>Switch</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="15" IdName="ch_C_dim">
+                <Name>Channel C</Name>
+                <Function>Dimming Absolute</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="16" IdName="ch_C_dimrel">
+                <Name>Channel C</Name>
+                <Function>Dimming Relative</Function>
+                <DataPointType>3.007</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="17" IdName="ch_C_lock">
+                <Name>Channel C</Name>
+                <Function>Lock</Function>
+                <DataPointType>1.003</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+			
+			<CommObject Id="18" IdName="ch_C_scene">
+                <Name>Channel C</Name>
+                <Function>Szene</Function>
+                <DataPointType>18.001</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+
+			<CommObject Id="19" IdName="ch_C_stat_sw">
+                <Name>Channel C</Name>
+                <Function>Status On/Off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			
+			<CommObject Id="20" IdName="ch_C_stat_dim">
+                <Name>Channel C</Name>
+                <Function>Status Dimming Value</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			<CommObject Id="21" IdName="ch_D_sw">
+                <Name>Channel D</Name>
+                <Function>Switch</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="22" IdName="ch_D_dim">
+                <Name>Channel D</Name>
+                <Function>Dimming Absolute</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="23" IdName="ch_D_dimrel">
+                <Name>Channel D</Name>
+                <Function>Dimming Relative</Function>
+                <DataPointType>3.007</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="24" IdName="ch_D_lock">
+                <Name>Channel D</Name>
+                <Function>Lock</Function>
+                <DataPointType>1.003</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+			
+			<CommObject Id="25" IdName="ch_D_scene">
+                <Name>Channel D</Name>
+                <Function>Szene</Function>
+                <DataPointType>18.001</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+
+			<CommObject Id="26" IdName="ch_D_stat_sw">
+                <Name>Channel D</Name>
+                <Function>Status On/Off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			
+			<CommObject Id="27" IdName="ch_D_stat_dim">
+                <Name>Channel D</Name>
+                <Function>Status Dimming Value</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			<CommObject Id="28" IdName="ch_E_sw">
+                <Name>Channel E</Name>
+                <Function>Switch</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="29" IdName="ch_E_dim">
+                <Name>Channel E</Name>
+                <Function>Dimming Absolute</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="30" IdName="ch_E_dimrel">
+                <Name>Channel E</Name>
+                <Function>Dimming Relative</Function>
+                <DataPointType>3.007</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="31" IdName="ch_E_lock">
+                <Name>Channel E</Name>
+                <Function>Lock</Function>
+                <DataPointType>1.003</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+			
+			<CommObject Id="32" IdName="ch_E_scene">
+                <Name>Channel E</Name>
+                <Function>Szene</Function>
+                <DataPointType>18.001</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+
+			<CommObject Id="33" IdName="ch_E_stat_sw">
+                <Name>Channel E</Name>
+                <Function>Status On/Off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			
+			<CommObject Id="34" IdName="ch_E_stat_dim">
+                <Name>Channel E</Name>
+                <Function>Status Dimming Value</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			<CommObject Id="35" IdName="ch_F_sw">
+                <Name>Channel F</Name>
+                <Function>Switch</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="36" IdName="ch_F_dim">
+                <Name>Channel F</Name>
+                <Function>Dimming Absolute</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="37" IdName="ch_F_dimrel">
+                <Name>Channel F</Name>
+                <Function>Dimming Relative</Function>
+                <DataPointType>3.007</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="38" IdName="ch_F_lock">
+                <Name>Channel F</Name>
+                <Function>Lock</Function>
+                <DataPointType>1.003</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+			
+			<CommObject Id="39" IdName="ch_F_scene">
+                <Name>Channel F</Name>
+                <Function>Szene</Function>
+                <DataPointType>18.001</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+
+			<CommObject Id="40" IdName="ch_F_stat_sw">
+                <Name>Channel F</Name>
+                <Function>Status On/Off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			
+			<CommObject Id="41" IdName="ch_F_stat_dim">
+                <Name>Channel F</Name>
+                <Function>Status Dimming Value</Function>
+                <DataPointType>5.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			<CommObject Id="42" IdName="ch_ABC_sw">
+                <Name>Channel ABC</Name>
+                <Function>Switch</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="43" IdName="ch_ABC_dim">
+                <Name>Channel ABC</Name>
+                <Function>Color</Function>
+                <DataPointType>232.600</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="44" IdName="ch_ABC_animation">
+                <Name>Channel ABC</Name>
+                <Function>Animation</Function>
+                <DataPointType>5.010</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+			
+			<CommObject Id="45" IdName="ch_ABC_lock">
+                <Name>Channel ABC</Name>
+                <Function>Lock</Function>
+                <DataPointType>1.003</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+			
+			<CommObject Id="46" IdName="ch_ABC_scene">
+                <Name>Channel ABC</Name>
+                <Function>Szene</Function>
+                <DataPointType>18.001</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+
+			<CommObject Id="47" IdName="ch_ABC_stat_sw">
+                <Name>Channel ABC</Name>
+                <Function>Status On/Off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			
+			<CommObject Id="48" IdName="ch_ABC_stat_dim">
+                <Name>Channel ABC</Name>
+                <Function>Status Color</Function>
+                <DataPointType>232.600</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			<CommObject Id="49" IdName="ch_DEF_sw">
+                <Name>Channel DEF</Name>
+                <Function>Switch</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="50" IdName="ch_DEF_dim">
+                <Name>Channel DEF</Name>
+                <Function>Color</Function>
+                <DataPointType>232.600</DataPointType>
+                <Flags>40</Flags> <!-- K_S___ -->
+            </CommObject>
+			
+			<CommObject Id="51" IdName="ch_DEF_animation">
+                <Name>Channel DEF</Name>
+                <Function>Animation</Function>
+                <DataPointType>5.010</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+			
+			<CommObject Id="52" IdName="ch_DEF_lock">
+                <Name>Channel DEF</Name>
+                <Function>Lock</Function>
+                <DataPointType>1.003</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+			
+			<CommObject Id="53" IdName="ch_DEF_scene">
+                <Name>Channel DEF</Name>
+                <Function>Szene</Function>
+                <DataPointType>18.001</DataPointType>
+                <Flags>56</Flags> <!-- KLS___ -->
+            </CommObject>
+
+			<CommObject Id="54" IdName="ch_DEF_stat_sw">
+                <Name>Channel DEF</Name>
+                <Function>Status On/Off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			
+			<CommObject Id="55" IdName="ch_DEF_stat_dim">
+                <Name>Channel DEF</Name>
+                <Function>Status Color</Function>
+                <DataPointType>232.600</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			<CommObject Id="56" IdName="gen_casetemp">
+                <Name>Global</Name>
+                <Function>Case temp</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>48</Flags> <!-- KL____ -->
+            </CommObject>
+			<CommObject Id="57" IdName="gen_temp_alarm">
+                <Name>Global</Name>
+                <Function>Temp alarm</Function>
+                <DataPointType>1.005</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+			<CommObject Id="58" IdName="gen_daynight">
+                <Name>Global</Name>
+                <Function>Day/Night</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>42</Flags> <!-- K_S_A_ -->
+            </CommObject>
+			<CommObject Id="59" IdName="gen_datetime">
+                <Name>Global</Name>
+                <Function>DateTime</Function>
+                <DataPointType>19.001</DataPointType>
+                <Flags>42</Flags> <!-- K_S_A_ -->
+            </CommObject>
+			<CommObject Id="60" IdName="error_code">
+                <Name>ErrorCode</Name>
+                <Function>Error</Function>
+                <DataPointType>12.001</DataPointType>
+                <Flags>52</Flags> <!-- KL_Ü__ -->
+            </CommObject>
+		</CommObjects>
+		<Dependencies>
+			<ParameterGroupDependency ParamGroupId="1" Test="eq" TestParamId="0" TestValue="00"/>
+			<ParameterGroupDependency ParamGroupId="2" Test="eq" TestParamId="0" TestValue="00"/>
+			<ParameterGroupDependency ParamGroupId="3" Test="eq" TestParamId="0" TestValue="00"/>
+			<ParameterGroupDependency ParamGroupId="7" Test="eq" TestParamId="0" TestValue="01"/>
+			
+			<ParameterGroupDependency ParamGroupId="4" Test="eq" TestParamId="1" TestValue="00"/>
+			<ParameterGroupDependency ParamGroupId="5" Test="eq" TestParamId="1" TestValue="00"/>
+			<ParameterGroupDependency ParamGroupId="6" Test="eq" TestParamId="1" TestValue="00"/>
+			<ParameterGroupDependency ParamGroupId="8" Test="eq" TestParamId="1" TestValue="01"/>
+			
+			<CommObjectDependency CommObjId="0" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="1" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="2" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="3" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="4" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="5" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="6" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="7" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="8" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="9" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="10" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="11" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="12" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="13" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="14" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="15" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="16" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="17" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="18" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="19" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="20" Test="eq" TestParamId="0" TestValue="00"/>
+			<CommObjectDependency CommObjId="42" Test="eq" TestParamId="0" TestValue="01"/>
+			<CommObjectDependency CommObjId="43" Test="eq" TestParamId="0" TestValue="01"/>
+			<CommObjectDependency CommObjId="44" Test="eq" TestParamId="0" TestValue="01"/>
+			<CommObjectDependency CommObjId="45" Test="eq" TestParamId="0" TestValue="01"/>
+			<CommObjectDependency CommObjId="46" Test="eq" TestParamId="0" TestValue="01"/>
+			<CommObjectDependency CommObjId="47" Test="eq" TestParamId="0" TestValue="01"/>
+			<CommObjectDependency CommObjId="48" Test="eq" TestParamId="0" TestValue="01"/>
+			
+			<CommObjectDependency CommObjId="21" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="22" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="23" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="24" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="25" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="26" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="27" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="28" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="29" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="30" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="31" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="32" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="33" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="34" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="35" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="36" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="37" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="38" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="39" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="40" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="41" Test="eq" TestParamId="1" TestValue="00"/>
+			<CommObjectDependency CommObjId="49" Test="eq" TestParamId="1" TestValue="01"/>
+			<CommObjectDependency CommObjId="50" Test="eq" TestParamId="1" TestValue="01"/>
+			<CommObjectDependency CommObjId="51" Test="eq" TestParamId="1" TestValue="01"/>
+			<CommObjectDependency CommObjId="52" Test="eq" TestParamId="1" TestValue="01"/>
+			<CommObjectDependency CommObjId="53" Test="eq" TestParamId="1" TestValue="01"/>
+			<CommObjectDependency CommObjId="54" Test="eq" TestParamId="1" TestValue="01"/>
+			<CommObjectDependency CommObjId="55" Test="eq" TestParamId="1" TestValue="01"/>
+			
+		</Dependencies>
+		
+	</Device>
+</KonnektingDevice>

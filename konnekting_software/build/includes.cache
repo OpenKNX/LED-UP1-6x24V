@@ -1,0 +1,222 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\dosp\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.3\\cores\\arduino"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\dosp\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.3\\variants\\itsybitsy_m0"
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DIM-6CVLED.01.ino.cpp",
+    "Include": "KonnektingDevice.h",
+    "Includepath": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\KONNEKTING_Device_Library_B4mod\\src"
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DIM-6CVLED.01.ino.cpp",
+    "Include": "Adafruit_DotStar.h",
+    "Includepath": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_DotStar"
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DIM-6CVLED.01.ino.cpp",
+    "Include": "OneWire.h",
+    "Includepath": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\OneWire"
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DIM-6CVLED.01.ino.cpp",
+    "Include": "DallasTemperature.h",
+    "Includepath": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\DallasTemperature"
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DIM-6CVLED.01.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\dosp\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.3\\libraries\\Wire"
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DIM-6CVLED.01.ino.cpp",
+    "Include": "SPI.h",
+    "Includepath": "C:\\Users\\dosp\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.3\\libraries\\SPI"
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DIM-6CVLED.01.ino.cpp",
+    "Include": "Adafruit_ZeroDMA.h",
+    "Includepath": "C:\\Users\\dosp\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.3\\libraries\\Adafruit_ZeroDMA"
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DIM-6CVLED.01.ino.cpp",
+    "Include": "Adafruit_SPIFlash.h",
+    "Includepath": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_SPIFlash"
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DIM-6CVLED.01.ino.cpp",
+    "Include": "Adafruit_GFX.h",
+    "Includepath": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_GFX_Library"
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DIM-6CVLED.01.ino.cpp",
+    "Include": "Adafruit_ILI9341.h",
+    "Includepath": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_ILI9341"
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DIM-6CVLED.01.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DimmChannel_1ch.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\DimmChannel_RGB.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\Dimmer.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\FileAsEEPROM.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\HardwareChannel_mega8.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\HardwareChannel_pca9685.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\KNXClock.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\KRSXL_common.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\PCA9685.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "d:\\Data\\Eigene Dokumente\\Projekte\\EIB\\Konnekting\\repos\\01 KNX Makerstuff repos\\kups-dim-6cvled\\software\\build\\sketch\\timeslice.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\KONNEKTING_Device_Library_B4mod\\src\\DebugUtil.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\KONNEKTING_Device_Library_B4mod\\src\\KnxComObject.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\KONNEKTING_Device_Library_B4mod\\src\\KnxDevice.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\KONNEKTING_Device_Library_B4mod\\src\\KnxTelegram.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\KONNEKTING_Device_Library_B4mod\\src\\KnxTpUart.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\KONNEKTING_Device_Library_B4mod\\src\\KonnektingDevice.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_DotStar\\Adafruit_DotStar.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\OneWire\\OneWire.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\DallasTemperature\\DallasTemperature.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\dosp\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.3\\libraries\\Wire\\Wire.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\dosp\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.3\\libraries\\SPI\\SPI.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\dosp\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.3\\libraries\\Adafruit_ZeroDMA\\Adafruit_ZeroDMA.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_SPIFlash\\Adafruit_SPIFlash.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_SPIFlash\\Adafruit_SPIFlash_FatFs.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_SPIFlash\\utility\\ccsbcs.c",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_SPIFlash\\utility\\ff.c",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_SPIFlash\\utility\\flashdisk.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_GFX_Library\\Adafruit_GFX.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_GFX_Library\\Adafruit_SPITFT.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_GFX_Library\\glcdfont.c",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "D:\\Data\\Eigene Dokumente\\Arduino\\libraries\\Adafruit_ILI9341\\Adafruit_ILI9341.cpp",
+    "Include": "",
+    "Includepath": ""
+  }
+]
